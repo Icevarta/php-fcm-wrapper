@@ -5,6 +5,11 @@ use GuzzleHttp\Command\Guzzle\GuzzleClient;
 
 class Client {
 	/**
+	 * Base URL to FCN
+	 */
+	const FCN_URL = 'https://fcm.googleapis.com/fcm/';
+
+	/**
 	 * Guzzle service description
 	 *
 	 * @var \FCM\Description
@@ -153,7 +158,7 @@ class Client {
 		$description = $this->loadResource('service-config');
 		// initial description building, use api info and build base url
 		$description = $description + [
-				'baseUrl' => 'https://fcm.googleapis.com/fcm/',
+				'baseUrl' => $this::FCN_URL,
 				'operations' => [],
 				'models' => []
 			];
