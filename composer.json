@@ -1,9 +1,9 @@
 {
-    "name": "talalm/php-fcm-wrapper",
+    "name": "icevarta/php-fcm-wrapper",
     "description": "PHP wrapper for FCM",
     "type": "library",
     "license": "MIT",
-    "version": "0.1",
+    "version": "0.2",
     "require": {
         "php": ">=5.3.0",
 	    "guzzlehttp/guzzle": "~5.3|~6.0",
